@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta property="og:title" content="Neko Airforce Images">
+      <meta property="og:description" content="A free to use catgirl image hosting service.">
+      <meta property="og:url" content="https://img.neko.airforce">
+      <meta property="og:image" content="https://img.neko.airforce/logo.png">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="generator" content="Pomf &lt;%= pkg.version %&gt;" />
+      <meta name="Description" content="A free to use catgirl image hosting service." />
+      <title>Neko Airforce &middot; Catgirl File Hosting</title>
+      <link rel="icon" href="favicon.ico" />
+      <link rel="stylesheet" href="pomf.min.css" />
+      <script src="pomf.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="jumbotron">
+			<div class="title">
+				<h1 id="imgText">Img</h1><h1 id="dot">.</h1><h1 id="neko">Neko</h1><h1 id="dot">.</h1><h1 id="airforce">Airforce</h1>
+			</div>
+            <p class="lead">Max upload size is 200&nbsp;MiB, read the <a href="faq.html"><abbr title="Frequently asked questions">FAQ</abbr></a></p>
+            <form id="upload-form" enctype="multipart/form-data" method="post" action="upload.php?output=html"><button id="upload-btn" class="btn" type="button">Select or drop file(s)</button><input type="file" id="upload-input" name="files[]" multiple data-max-size="200MiB"><input type="submit" value="Submit"></form>
+            <ul id="upload-filelist"></ul>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="https://neko.airforce">Neko Airforce</a></li>
+               <li><a href="tools.html">Tools</a></li>
+               <li><a href="https://github.com/pomf/pomf">Github</a></li>
+            </ul>
+         </nav>
+      </div>
+   </body>
+</html>
